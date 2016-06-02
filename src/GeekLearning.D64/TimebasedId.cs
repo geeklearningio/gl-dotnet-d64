@@ -60,5 +60,13 @@ namespace GeekLearning.D64
 
             return D64Convert.Encode(utcBytes);
         }
+
+        public string DateBoundary(DateTimeOffset datetime)
+        {
+            var utcBytes = GetDateBytes(datetime);
+            var rngId = new byte[8];
+
+            return D64Convert.Encode(utcBytes) + D64Convert.Encode(rngId);
+        }
     }
 }
