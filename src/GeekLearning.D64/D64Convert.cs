@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GeekLearning.D64
+﻿namespace GeekLearning.D64
 {
-    // This project can output the Class library as a NuGet Package.
-    // To enable this option, right-click on the project and select the Properties menu item. In the Build tab select "Produce outputs on build".
+    using System.Linq;
+    using System.Text;
+
     public class D64Convert
     {
         private static char[] alphabet;
@@ -53,8 +48,12 @@ namespace GeekLearning.D64
                 }
 
             }
+
             if (l % 3 != 0)
+            {
                 s.Append(alphabet[hang]);
+            }
+
             return s.ToString();
         }
 
@@ -88,6 +87,7 @@ namespace GeekLearning.D64
                 }
 
             }
+
             return b;
         }
     }

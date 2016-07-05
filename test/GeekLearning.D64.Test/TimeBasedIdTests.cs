@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Xunit;
-
-namespace GeekLearning.D64.Test
+﻿namespace GeekLearning.D64.Test
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using Xunit;
+
     public class TimeBasedIdTests
     {
         [Theory]

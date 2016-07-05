@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Threading.Tasks;
-
-namespace GeekLearning.D64
+﻿namespace GeekLearning.D64
 {
+    using System;
+    using System.Linq;
+    using System.Security.Cryptography;
+
     public class TimebasedId
     {
         private RandomNumberGenerator rng;
@@ -20,9 +18,11 @@ namespace GeekLearning.D64
         private long GetDateTicks(DateTimeOffset date)
         {
             if (this.reverseOrder)
+            {
                 return long.MaxValue - date.UtcTicks;
-            else
-                return date.UtcTicks;
+            }
+
+            return date.UtcTicks;
         }
 
         private byte[] GetDateBytes(DateTimeOffset date)
@@ -32,6 +32,7 @@ namespace GeekLearning.D64
             {
                 utcBytes = utcBytes.Reverse().ToArray();
             }
+
             return utcBytes;
         }
 
