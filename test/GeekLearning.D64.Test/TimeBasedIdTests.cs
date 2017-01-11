@@ -39,7 +39,6 @@
             Assert.True(StringComparer.Ordinal.Compare(idGen.NewId(dateA), idGen.NewId(dateB)) > 0);
         }
 
-
         [Theory]
         [InlineData("1985-05-09T06:00:00Z", new string[] { "1977-04-22T06:00:00Z", "1977-04-22T06:00:00.5Z",
             "1985-05-09T06:00:00Z", "1985-05-09T06:01:00Z", "1985-05-09T06:00:01Z"})]
