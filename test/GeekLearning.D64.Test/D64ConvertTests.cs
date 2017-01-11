@@ -21,6 +21,7 @@
                 aBytes = aBytes.Reverse().ToArray();
                 bBytes = bBytes.Reverse().ToArray();
             }
+
             Assert.True(StringComparer.Ordinal.Compare(D64Convert.Encode(aBytes), D64Convert.Encode(bBytes)) < 0);
         }
     }

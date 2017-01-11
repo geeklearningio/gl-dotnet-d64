@@ -1,23 +1,19 @@
 ﻿{
   "version": "0.0.1-*",
-  "description": "GeekLearning.Domain Class Library",
+  "description": ".NET Standard port of D64, a copy-pastable, URL friendly, ASCII embeddable, lexiographicly sortable binary encoding.",
   "authors": [ "Geek Learning", "Adrien Siffermann", "Cyprien Autexier" ],
   "packOptions": {
     "tags": [ "d64" ],
     "projectUrl": "https://github.com/geeklearningio/gl-dotnet-d64",
-    "licenseUrl": "https://github.com/geeklearningio/gl-dotnet-d64/blob/develop/LICENSE.md"
+    "licenseUrl": "https://github.com/geeklearningio/gl-dotnet-d64/blob/master/LICENSE.md"
   },
 
   "dependencies": {
-    "NETStandard.Library": "1.6.0"
+    "NETStandard.Library": "1.6.1"
   },
 
   "frameworks": {
-    "net452": {},
-    "netstandard1.3": {
-      "dependencies": {
-        "System.Security.Cryptography.Algorithms": "4.2.0"
-      }
-    }
+    "net45": {},
+    "netstandard1.3": {}
   }
 }
